@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <div id={Styles['container']}>
-            <p id={Styles['logo']}>Receta.io</p>
+            <NavLink to={'/'} id={Styles['logo']}>Receta.io</NavLink>
             <ul id={Styles['nav-list']}>
                 <li>
                     <NavLink to={'/'} className={({ isActive }) => isActive ? Styles['active'] : ""}>

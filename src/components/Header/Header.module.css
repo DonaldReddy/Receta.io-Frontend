@@ -11,9 +11,10 @@
     font-weight: 700;
 }
 
-#container p {
+#logo {
     color: white;
-
+    text-decoration: none;
+    font-size: 1.5rem
 }
 
 #nav-list {
@@ -33,5 +34,5 @@
 }
 
 .active {
-    font-size: 22px;
+    font-size: 1.2rem;
 }
