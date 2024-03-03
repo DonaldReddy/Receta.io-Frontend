@@ -5,7 +5,7 @@ import Styles from './Header.module.css'
 function Header() {
 
     return (
-        <div id={Styles['container']}>
+        <nav id={Styles['container']}>
             <NavLink to={'/'} id={Styles['logo']}>Receta.io</NavLink>
             <ul id={Styles['nav-list']}>
                 <li>
@@ -30,7 +30,7 @@ function Header() {
                 </li>
 
             </ul>
-        </div>
+        </nav>
     )
 }
 
