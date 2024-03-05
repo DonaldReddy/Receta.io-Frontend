@@ -5,10 +5,11 @@
     padding: 10px;
 }
 
-img {
+#container img {
     z-index: -1;
     height: 400px;
     width: 1200px;
+    aspect-ratio: 16/9;
 }
 
 button {
@@ -33,7 +34,7 @@ button {
 }
 
 button:hover {
-    background: #ffffff7e;
+    background: #ffffffa2;
     cursor: pointer;
     color: #000;
 }

@@ -1,19 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from './SlideShow.module.css'
 
 function SlideShow() {
 
-    const imgs = ['0.jpg', '1.jpg', '2.jpg', '3.jpg',]
+    const imgs = ['0.jpg', '1.jpg', '2.png', '3.jpg',]
 
     const [imgidx, setImgidx] = useState(0)
 
     function handleNext() {
-        setImgidx((imgidx + 1) % imgs.length)
+        setImgidx((prev) => {
+            return (prev + 1) % imgs.length
+        })
     }
 
     function handlePrevious() {
-        setImgidx((imgidx - 1) % imgs.length)
+        setImgidx((imgidx - 1 + imgs.length) % imgs.length)
     }
+
+    useEffect(() => {
+        const ref = setInterval(handleNext, 4000);
+        return () => clearInterval(ref);
+    }, [])
 
     return (
         <div id={Styles['container']}>

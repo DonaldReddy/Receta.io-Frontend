@@ -1,5 +1,6 @@
 import React from 'react'
 import SlideShow from './SlideShow/SlideShow'
+import Recommendation from './Recommendation/Recommendation'
 import Styles from './Home.module.css'
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
             </section>
 
             <section>
-
+                <Recommendation />
             </section>
         </div>
     )
