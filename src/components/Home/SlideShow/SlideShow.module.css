@@ -12,7 +12,8 @@
     aspect-ratio: 16/9;
 }
 
-button {
+#btn-1,
+#btn-2 {
     height: 300px;
     width: 60px;
     border: none;
@@ -33,7 +34,8 @@ button {
     right: 80px;
 }
 
-button:hover {
+#btn-1:hover,
+#btn-2:hover {
     background: #ffffffa2;
     cursor: pointer;
     color: #000;
