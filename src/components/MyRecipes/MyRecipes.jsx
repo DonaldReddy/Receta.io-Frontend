@@ -14,7 +14,7 @@ function Recipes() {
                     <input type='text' placeholder='Enter...' />
                     <button type='submit'>🔍</button>
                 </form>
-                <NavLink to='addRecipe'>+ Post New Recipe</NavLink>
+                <NavLink to='add-recipe'>+ Post New Recipe</NavLink>
             </div>
             <div id={Styles['cards']}>
                 <Card title="asdasdasd" content="asdjnas asidnsdoa aoisdnasidninad asdsd asd s d sa sd sd" />
