@@ -1,0 +1,71 @@
+#container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgb(235, 98, 98);
+    border-radius: 10px;
+}
+
+#sign-in {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sign-in input {
+    outline: none;
+    font-size: 1em;
+    padding: 0px 10px;
+}
+
+#sign-in button {
+    color: white;
+    background: rgb(245, 112, 112);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+#sign-in button:hover {
+    animation: rubber-band 1s ease;
+}
+
+
+
+@keyframes rubber-band {
+
+    10% {
+        transform: scaleX(1.8);
+    }
+
+    30% {
+        transform: scaleX(0.6);
+    }
+
+    50% {
+        transform: scaleX(1.2);
+    }
+
+    70% {
+        transform: scaleX(0.9);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}

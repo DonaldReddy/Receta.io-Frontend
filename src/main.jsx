@@ -7,6 +7,8 @@ import Recipes from './components/Recipes/Recipes.jsx'
 import MyRecipes from './components/MyRecipes/MyRecipes.jsx'
 import AddRecipe from './components/MyRecipes/AddRecipe/AddRecipe.jsx'
 import MyAccount from './components/MyAccount/MyAccount.jsx'
+import SignIn from './components/SignIn/SignIn.jsx'
+import SignUp from './components/SignUp/SignUp.jsx'
 import './index.css'
 
 const router = createBrowserRouter(
@@ -24,6 +26,10 @@ const router = createBrowserRouter(
         <Route path='add-recipe' element={<AddRecipe />} />
 
       </Route>
+
+      <Route path='sign-in' element={<SignIn />} ></Route>
+
+      <Route path='sign-up' element={<SignUp />} ></Route>
 
       <Route path='my-account' element={<MyAccount />} ></Route>
 
