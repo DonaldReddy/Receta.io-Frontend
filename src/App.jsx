@@ -2,15 +2,16 @@ import { Outlet } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Styles from './App.module.css'
+import UserContextProvider from './context/UserContextProvider.jsx'
 
 function App() {
 
   return (
-    <div id={Styles['container']}>
+    <UserContextProvider>
       <Header />
       <Outlet />
       <Footer />
-    </div>
+    </UserContextProvider>
   )
 
 }

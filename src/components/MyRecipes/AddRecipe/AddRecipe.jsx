@@ -9,7 +9,7 @@ function AddRecipe() {
 
                 <form id={Styles['type']}>
 
-                    <input id={Styles['veg']} type='radio' name='type' onChange={() => console.log("selece")} checked />
+                    <input id={Styles['veg']} type='radio' name='type' onChange={() => console.log("selece")} />
                     <label htmlFor={Styles['veg']} >Veg</label>
 
                     <input id={Styles['non-veg']} type='radio' name='type' onChange={() => console.log("selece")} />
@@ -25,6 +25,11 @@ function AddRecipe() {
                     <input id={Styles['name']} type='text' placeholder='Recipe Name' />
 
                     <textarea id={Styles['about']} type='text' placeholder='About' rows='10' cols='50' />
+
+                    <label id={Styles['image-upload-label']} htmlFor={Styles['image-upload-btn']}>
+                        + Add Image
+                        <input id={Styles['image-upload-btn']} type='file' accept='image/*' />
+                    </label>
 
                     <textarea id={Styles['ingredients']} type='text' placeholder='Ingredients' rows='10' cols='50' />
 
