@@ -22,14 +22,9 @@ function SignIn() {
         }
     }, [])
 
-    if (userAuth)
-        return <p>
-            Already logged in
-        </p>
 
     function handleChange(e) {
         setLoginInfo({ ...loginInfo, [e.target.name]: e.target.value })
-        console.log(loginInfo);
     }
 
     function handleSubmit(e) {
@@ -40,21 +35,29 @@ function SignIn() {
 
         <div id={Styles['container']}>
 
-            <div id={Styles['main']}>
+            {
+                userAuth ?
+                    <p>Already Logged in Redirecting in 3 seconds</p>
+                    :
 
-                <h2>Sign In</h2>
+                    (
+                        <div id={Styles['main']}>
 
-                <form id={Styles['sign-in']}>
+                            <h2>Sign In</h2>
 
-                    <input placeholder='Email' type='email' name='email' onChange={handleChange} />
+                            <form id={Styles['sign-in']}>
 
-                    <input placeholder='password' type='password' name='password' onChange={handleChange} />
+                                <input placeholder='Email' type='email' name='email' onChange={handleChange} />
 
-                    <button type='submit' onClick={handleSubmit}> Log In</button>
+                                <input placeholder='password' type='password' name='password' onChange={handleChange} />
 
-                </form>
+                                <button type='submit' onClick={handleSubmit}> Log In</button>
 
-            </div>
+                            </form>
+
+                        </div>
+                    )
+            }
 
         </div>
     )

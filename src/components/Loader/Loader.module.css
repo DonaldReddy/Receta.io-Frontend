@@ -1,0 +1,36 @@
+#loader {
+    padding: 10px;
+    border-bottom: 20px solid rgba(128, 128, 128, 0.26);
+    border-radius: 20px;
+}
+
+#triangle {
+    border-radius: 5%;
+    border: 100px solid transparent;
+    animation: loader 4s ease-in infinite,
+        leviate 5s ease infinite;
+}
+
+@keyframes loader {
+    20% {
+        border-bottom: 100px solid rgb(250, 95, 95);
+    }
+
+    40% {
+        border-left: 100px solid rgb(250, 95, 95);
+    }
+
+    60% {
+        border-top: 100px solid rgb(250, 95, 95);
+    }
+
+    80% {
+        border-right: 100px solid rgb(250, 95, 95);
+    }
+}
+
+@keyframes leviate {
+    50% {
+        transform: translateY(-20px);
+    }
+}
